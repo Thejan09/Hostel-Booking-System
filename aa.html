@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Availability</title>
+    <link rel="stylesheet" href="CA & R.css">
+    <link rel="js" href="CA & R.js">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#" class="active">Rooms</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Complains</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Availability Section -->
+    <div class="container">
+        <h1>Room Availability</h1>
+
+        <div class="date-selection">
+            <input type="date" id="checkin-date" placeholder="Check-in Date">
+            <input type="date" id="checkout-date" placeholder="Check-out Date">
+            <button onclick="checkAvailability()">Check Availability</button>
+        </div>
+
+        <div id="room-list" class="room-list">
+            <div class="room-card">
+                <h2>G1</h2>
+                <p>Guests: 2</p>
+                <p>Price: Non-refundable</p>
+                <button>Book Now</button>
+            </div>
+            <div class="room-card">
+                <h2>G2</h2>
+                <p>Guests: 4</p>
+                <p>Price: Non-refundable</p>
+                <button>Book Now</button>
+            </div>
+            <div class="room-card">
+                <h2>G3</h2>
+                <p>Guests: 4</p>
+                <p>Price: Non-refundable</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

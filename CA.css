@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f2;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px;
+    text-align: right;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar ul li .active {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Room Details */
+.room-details p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+/* Background Image */
+.room-image img {
+    max-width: 100%;
+    margin-top: 20px;
+    opacity: 0.3; /* Transparent effect for text */
+}

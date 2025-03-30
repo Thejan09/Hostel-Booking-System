@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details</title>
+    <link rel="stylesheet" href="Payment.css">
+    <link rel="js" href="Payment.js">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#" class="active">Payment</a></li>
+            <li><a href="#">Complains</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Payment Section -->
+    <div class="container">
+        <h2>Transaction Details</h2>
+        <p><strong>Date:</strong> 29 - Mar - 2025</p>
+
+        <div class="amount-box">
+            <span>LKR. 750/=</span>
+        </div>
+
+        <form id="payment-form">
+            <label for="card-name">Name on Card:</label>
+            <input type="text" id="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" maxlength="16" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <div class="expiry-cvv">
+                <input type="text" id="expiry-month" placeholder="MM" maxlength="2" required>
+                <input type="text" id="expiry-year" placeholder="YY" maxlength="2" required>
+            </div>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" maxlength="3" required>
+
+            <div class="buttons">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Booking Issues Form</title>
+    <link rel="stylesheet" href="BI.css">
+    <link rel="js" href="BI.js">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#" class="active">Complains</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Form Section -->
+    <div class="container">
+        <h1>Hostel Booking Issues Form</h1>
+
+        <form id="issuesForm">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="row">
+                <div class="column">
+                    <label for="regNumber">Registration Number :</label>
+                    <input type="text" id="regNumber" name="regNumber" required>
+                </div>
+                <div class="column">
+                    <label for="phone">Phone Number :</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="duration">Duration :</label>
+                    <input type="text" id="duration" name="duration" required>
+                </div>
+                <div class="column">
+                    <label for="paymentAmount">Payment Amount :</label>
+                    <input type="text" id="paymentAmount" name="paymentAmount" required>
+                </div>
+            </div>
+
+            <label for="checkoutDate">Check out Date :</label>
+            <input type="date" id="checkoutDate" name="checkoutDate" required>
+
+            <label for="bankSelection">Bank Selection :</label>
+            <input type="text" id="bankSelection" name="bankSelection" required>
+
+            <label for="paymentDate">Payment Date :</label>
+            <input type="date" id="paymentDate" name="paymentDate" required>
+
+            <label for="comments">Comments :</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

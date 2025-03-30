@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="Booking.css">
+    <link rel="js" href="Booking.js">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#" class="active">Payment</a></li>
+            <li><a href="#">Complains</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Details Form -->
+    <div class="container">
+        <h1>Booking Details</h1>
+
+        <div class="form-container">
+            <div class="form-section">
+                <label>First Name:</label>
+                <input type="text" id="first-name">
+
+                <label>Last Name:</label>
+                <input type="text" id="last-name">
+
+                <label>Email:</label>
+                <input type="email" id="email">
+
+                <label>Telephone:</label>
+                <input type="tel" id="telephone">
+
+                <label>Address:</label>
+                <input type="text" id="address">
+            </div>
+
+            <div class="date-section">
+                <label>Check-in Date:</label>
+                <input type="date" id="check-in">
+
+                <label>Check-out Date:</label>
+                <input type="date" id="check-out">
+            </div>
+
+            <div class="image-container">
+                <img src="calendar.png" alt="Booking Image">
+            </div>
+        </div>
+
+        <div class="reservation-details">
+            <h2>Your Reservation Details</h2>
+            <div class="details">
+                <div class="detail-box"><strong>Room</strong><p>G1</p></div>
+                <div class="detail-box"><strong>Qty</strong><p>01</p></div>
+                <div class="detail-box"><strong>Cost</strong><p>750/=</p></div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="cancel-btn">Cancel</button>
+            <button class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f2;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px;
+    text-align: right;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar ul li .active {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Booking Form */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-section {
+    width: 40%;
+    text-align: left;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-section input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Date Section */
+.date-section {
+    width: 40%;
+    text-align: left;
+}
+
+.date-section label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.date-section input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Image Section */
+.image-container img {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Reservation Details */
+.reservation-details {
+    margin-top: 30px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.detail-box {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* Buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: darkred;
+}
+
+.submit-btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.submit-btn:hover {
+    background: darkblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-section, .date-section {
+        width: 80%;
+    }
+}
